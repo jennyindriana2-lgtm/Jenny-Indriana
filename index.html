@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jenny Indriana — Portofolio</title>
+<meta name="description" content="Portofolio Jenny Indriana — lulusan S1 Manajemen STIE Pancasetia, berpengalaman magang di Kejaksaan Negeri Kota Banjarbaru bidang Intelijen.">
+<meta name="theme-color" content="#4a2140">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jenny Indriana — Portofolio">
+<meta property="og:description" content="Lulusan S1 Manajemen yang disiplin, cepat belajar, dan siap berkontribusi.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%2216%22%20fill%3D%22%234a2140%22/%3E%3Ctext%20x%3D%2216%22%20y%3D%2222%22%20font-family%3D%22Georgia%22%20font-style%3D%22italic%22%20font-size%3D%2218%22%20fill%3D%22%23f0c6bd%22%20text-anchor%3D%22middle%22%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+<style>
+/* VOICE: anggun, hangat, rapi — portofolio profesional seorang lulusan manajemen
+   IDEA: kartu undangan bernuansa bunga: kelopak yang melayang, bingkai bulat dengan teks melingkar, tinta rose gold
+   PICTURE: foto Jenny dalam bingkai bulat berlapis, teks nama berputar di sekelilingnya, kelopak berjatuhan pelan
+   COLOUR and TYPE: berry #4a2140, rose gold #c08a77, blush #fbf3f0; Lora + Allura (aksen) + Montserrat
+   LAYOUT: hero blush dua kolom, pita berry, bab-bab bergantian terang dan berry, kontak berry di akhir */
+:root{color-scheme:light;--berry:#4a2140;--berry2:#331630;--rg:#c08a77;--rose:#d9a5a0;--pink:#f0c6bd;--blush:#fbf3f0;--blush2:#f5e6e1;
+  --ink:#2f2530;--mute:#6f6270;--line:#ecdcd6;--card:#ffffff;--ease:cubic-bezier(.2,.8,.2,1);
+  --serif:"Lora",Georgia,serif;--script:"Allura","Lora",cursive;--sans:"Montserrat",system-ui,sans-serif}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--blush);color:var(--ink);font:16px/1.7 var(--sans);overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit}img{display:block;max-width:100%}
+::selection{background:var(--rg);color:#fff}
+.wrap{max-width:1180px;margin:0 auto}
+.band{padding:clamp(70px,9vw,120px) max(5vw,18px);position:relative}
+.kick{font:400 clamp(30px,3.4vw,40px)/1 var(--script);color:var(--rg);margin:0 0 4px}
+h2{font:700 clamp(32px,4.4vw,52px)/1.1 var(--serif);color:var(--berry);margin:0 0 14px;letter-spacing:-.01em;text-wrap:balance}
+h2 em{font-style:italic;font-weight:500;color:var(--rg)}
+.lead{color:var(--mute);max-width:58ch;margin:0 0 44px;font-size:17px}
+.dark{background:linear-gradient(180deg,var(--berry),var(--berry2));color:#f6e4e5}
+.dark h2{color:#fff}.dark .lead{color:#d9c2c6}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+/* petals canvas */
+#petals{position:fixed;inset:0;pointer-events:none;z-index:1}
+
+/* nav */
+.prog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--rg),var(--pink));z-index:60}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s,box-shadow .4s}
+nav.solid{background:#fbf3f0e6;backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+nav .wrap{display:flex;align-items:center;gap:16px;padding:14px max(5vw,18px);flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;cursor:pointer}
+.logo b{width:40px;height:40px;border-radius:50%;background:var(--berry);display:grid;place-items:center;font:italic 600 21px var(--serif);color:var(--pink);box-shadow:0 0 0 3px var(--blush),0 0 0 4.5px var(--rg);transition:transform .6s var(--ease)}
+.logo:hover b{transform:rotate(-12deg) scale(1.05)}
+.logo span{font:600 18px var(--serif);color:var(--berry)}
+.logo span i{font-style:italic;font-weight:500;color:var(--rg)}
+.links{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.links a{flex:none;text-decoration:none;font-size:14px;font-weight:600;padding:10px 13px;border-radius:99px;color:var(--mute);transition:color .2s,background .2s}
+.links a:hover,.links a:focus-visible{color:var(--berry);background:#4a21400d;outline:none}
+.links a.on{color:#fff;background:var(--berry)}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:99px;font:600 15px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;white-space:nowrap;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s,background .3s,color .3s,border-color .3s}
+.btn>*{position:relative;z-index:1}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.pri{background:var(--berry);color:#fff;box-shadow:0 16px 34px -16px var(--berry)}
+.btn.pri::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--rg),#d8a08f);transform:translateX(-101%);transition:transform .5s var(--ease)}
+.btn.pri:hover::before{transform:none}
+.btn.pri:hover{transform:translateY(-2px)}
+.btn.gh{background:transparent;color:var(--berry);border:1.5px solid var(--rg)}
+.btn.gh:hover{background:var(--rg);color:#fff;transform:translateY(-2px)}
+.dark .btn.gh{color:#fff;border-color:#f0c6bd88}.dark .btn.gh:hover{background:#fff;color:var(--berry)}
+.btn.sm{min-height:44px;padding:0 18px;font-size:14px}
+.btn:focus-visible{outline:3px solid var(--rg);outline-offset:3px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:110px max(5vw,18px) 70px;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;width:760px;height:760px;right:-200px;top:-180px;border-radius:50%;background:radial-gradient(circle,#efc9c1 0%,#f5ddd7 40%,transparent 70%);z-index:-1;animation:breathe 9s ease-in-out infinite}
+.hero::after{content:"";position:absolute;width:520px;height:520px;left:-220px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,#ead0e0 0%,transparent 70%);z-index:-1;animation:breathe 11s ease-in-out infinite reverse}
+@keyframes breathe{50%{transform:scale(1.12) translate(-20px,20px)}}
+.hero .wrap{width:100%;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(30px,5vw,80px);align-items:center}
+.hello{font:400 clamp(40px,5vw,62px)/1 var(--script);color:var(--rg);margin:0}
+.hero h1{font:700 clamp(54px,7.6vw,104px)/.98 var(--serif);color:var(--berry);margin:6px 0 18px;letter-spacing:-.02em}
+.hero h1 em{display:block;font-style:italic;font-weight:500;color:var(--rg)}
+.hero h1 .ch{display:inline-block;opacity:0;transform:translateY(40%) rotate(4deg);animation:chin 1s var(--ease) forwards;animation-delay:calc(.2s + var(--i)*.045s)}
+@keyframes chin{to{opacity:1;transform:none}}
+body:not(.ready) .hero h1 .ch,body:not(.ready) .frame{animation-play-state:paused}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;border-radius:99px;background:#fff;border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--berry);box-shadow:0 10px 30px -18px var(--berry)}
+.pill i{width:28px;height:28px;border-radius:50%;background:var(--berry);display:grid;place-items:center}
+.pill i svg{width:15px;height:15px;stroke:var(--pink);fill:none;stroke-width:2}
+.typed{font:italic 500 clamp(18px,2vw,21px) var(--serif);color:var(--mute);min-height:1.6em;margin:22px 0 10px}
+.typed b{color:var(--berry);font-weight:600}
+.typed::after{content:"|";margin-left:2px;color:var(--rg);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p.sub{color:var(--mute);max-width:46ch;margin:0 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chips span{display:flex;align-items:center;gap:8px;padding:9px 15px;border-radius:99px;background:#ffffffb3;border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--berry)}
+.chips span b{font:700 18px var(--serif);color:var(--rg)}
+
+.frame{position:relative;justify-self:center;width:min(100%,440px);aspect-ratio:1;cursor:pointer;animation:pop 1.2s var(--ease) both}
+@keyframes pop{from{opacity:0;transform:scale(.85) rotate(-6deg)}}
+.frame .txt{position:absolute;inset:0;animation:spin 26s linear infinite}
+.frame .txt text{font:600 13.5px var(--sans);letter-spacing:5.2px;fill:var(--berry);text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}
+.frame .r1{position:absolute;inset:12%;border-radius:50%;border:1.5px dashed var(--rg);animation:spin 40s linear infinite reverse}
+.frame .ph{position:absolute;inset:17%;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 40px 70px -30px #4a214088,0 0 0 1.5px var(--rg);background:#ddd;transition:transform .6s var(--ease)}
+.frame:hover .ph{transform:scale(1.03)}
+.frame .ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.16);transform-origin:50% 46%}
+.frame .flower{position:absolute;width:30%;right:-2%;bottom:4%;transform:rotate(18deg);pointer-events:none}
+.frame .flower2{position:absolute;width:18%;left:2%;top:6%;transform:rotate(-140deg);pointer-events:none;opacity:.8}
+.bubble{position:absolute;left:-6%;top:14%;background:#fff;color:var(--berry);padding:12px 18px;border-radius:20px 20px 20px 4px;font:italic 600 16px var(--serif);box-shadow:0 20px 40px -20px #4a214099;border:1px solid var(--line);white-space:nowrap;transition:transform .45s var(--ease),opacity .3s;animation:bob 5s ease-in-out infinite}
+.bubble.chg{transform:scale(.6);opacity:0}
+@keyframes bob{50%{translate:0 -8px}}
+.badge{position:absolute;right:-4%;top:52%;display:flex;align-items:center;gap:10px;background:var(--berry);color:#fff;padding:10px 16px 10px 10px;border-radius:16px;font-size:13px;font-weight:600;box-shadow:0 20px 40px -18px var(--berry);animation:bob 6s 1s ease-in-out infinite}
+.badge small{display:block;font-weight:500;color:var(--pink);font-size:12px}
+.badge i{width:34px;height:34px;border-radius:10px;background:var(--rg);display:grid;place-items:center}
+.badge i svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hint{position:absolute;left:50%;bottom:-36px;transform:translateX(-50%);font-size:13px;color:var(--mute);white-space:nowrap}
+
+/* ribbon */
+.ribbon{background:var(--berry);color:#f6dcd8;overflow:hidden;padding:18px 0;position:relative;z-index:2}
+.ribbon .tr{display:flex;width:max-content;animation:mq 36s linear infinite}
+.ribbon span{display:flex;align-items:center;gap:26px;padding-right:26px;font:italic 500 clamp(19px,2vw,24px) var(--serif);white-space:nowrap}
+.ribbon span::after{content:"";width:9px;height:9px;transform:rotate(45deg);background:var(--rg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(30px,5vw,80px);align-items:start}
+.about p.big{font:500 clamp(19px,2vw,23px)/1.6 var(--serif);color:var(--ink);margin:0 0 26px}
+.about p.big em{color:var(--rg);font-weight:600}
+.traits{display:flex;flex-wrap:wrap;gap:10px}
+.traits span{padding:10px 18px;border-radius:99px;border:1.5px solid var(--rg);color:var(--berry);font-weight:600;font-size:14px;transition:all .3s var(--ease);cursor:default}
+.traits span:hover{background:var(--berry);border-color:var(--berry);color:#fff;transform:translateY(-3px) rotate(-2deg)}
+.qcard{position:relative;background:var(--berry);color:#fff;border-radius:28px 28px 28px 6px;padding:40px 32px 32px;overflow:hidden}
+.qcard::before{content:"\201C";position:absolute;right:18px;top:-24px;font:italic 700 190px/1 var(--serif);color:#ffffff14}
+.qcard p{font:italic 500 clamp(21px,2.2vw,26px)/1.45 var(--serif);margin:0 0 22px;position:relative}
+.qcard small{color:var(--pink);font-weight:600;font-size:14px}
+.qcard .fl{position:absolute;width:110px;right:-14px;bottom:-18px;opacity:.5}
+
+/* experience */
+.xp{display:grid;gap:22px}
+.job{position:relative;display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:24px;align-items:start;background:#ffffff0d;border:1px solid #ffffff1f;border-radius:24px;padding:28px;transition:transform .5s var(--ease),background .4s,border-color .4s}
+.job:hover{transform:translateY(-6px);background:#ffffff16;border-color:#f0c6bd66}
+.job .ic{width:76px;height:76px;border-radius:22px;background:linear-gradient(135deg,var(--rg),#e0aa98);display:grid;place-items:center;transition:transform .6s var(--ease)}
+.job:hover .ic{transform:rotate(-8deg) scale(1.05)}
+.job .ic svg{width:34px;height:34px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.job h3{margin:0;font:600 clamp(21px,2.2vw,26px)/1.25 var(--serif);color:#fff}
+.job .org{color:var(--pink);font-weight:600;font-size:15px;margin:4px 0 12px}
+.job ul{margin:0;padding:0;list-style:none;display:grid;gap:7px;color:#e9d6d9}
+.job li{position:relative;padding-left:22px}
+.job li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;transform:rotate(45deg);background:var(--rg)}
+.yr{flex:none;font:700 14px var(--sans);color:var(--berry);background:var(--pink);padding:7px 14px;border-radius:99px;white-space:nowrap}
+
+/* education */
+.edu{position:relative;display:grid;gap:0;max-width:860px}
+.edu::before{content:"";position:absolute;left:23px;top:12px;bottom:12px;width:2px;background:linear-gradient(var(--rg),var(--rose));transform-origin:top;transform:scaleY(var(--p,0));transition:transform .2s}
+.ed{position:relative;display:grid;grid-template-columns:48px minmax(0,1fr);gap:22px;align-items:center;padding:18px 0}
+.ed .dot{width:48px;height:48px;border-radius:50%;background:#fff;border:2px solid var(--rg);display:grid;place-items:center;z-index:1;transition:background .4s}
+.ed:hover .dot{background:var(--rg)}
+.ed .dot svg{width:22px;height:22px;stroke:var(--rg);fill:none;stroke-width:1.8;transition:stroke .4s}
+.ed:hover .dot svg{stroke:#fff}
+.ed .box{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px 24px;box-shadow:0 20px 40px -32px #4a214066}
+.ed h3{margin:0;font:600 clamp(19px,2vw,23px) var(--serif);color:var(--berry)}
+.ed p{margin:2px 0 0;color:var(--mute);font-size:15px}
+.ed .yr{background:var(--berry);color:#fff}
+
+/* skills */
+.skills{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(30px,5vw,70px)}
+.rings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ring{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px 14px 18px;text-align:center;transition:transform .5s var(--ease),box-shadow .5s}
+.ring:hover{transform:translateY(-6px);box-shadow:0 26px 40px -30px #4a214088}
+.ring svg{width:96px;height:96px;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:8;stroke-linecap:round}
+.ring .bg{stroke:var(--blush2)}.ring .fg{stroke:url(#rgGrad);stroke-dasharray:264;stroke-dashoffset:264;transition:stroke-dashoffset 1.8s var(--ease)}
+.ring .v{position:relative;margin-top:-66px;height:40px;font:700 22px var(--serif);color:var(--berry)}
+.ring b{display:block;margin-top:24px;font-size:14px;color:var(--ink)}
+.tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tool{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;transition:transform .4s var(--ease)}
+.tool:hover{transform:translateY(-4px) rotate(-1deg)}
+.tool i{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:#fff;font:800 18px var(--sans);font-style:normal;flex:none}
+.tool b{font-size:15px}
+.tool small{display:block;color:var(--mute);font-size:13px}
+
+/* achievements */
+.ach{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.ac{position:relative;background:#fff;border:1px solid var(--line);border-radius:26px;padding:30px 26px;overflow:hidden;transition:transform .5s var(--ease)}
+.ac:hover{transform:translateY(-8px)}
+.ac::after{content:"";position:absolute;right:-40px;top:-40px;width:120px;height:120px;border-radius:50%;background:var(--blush2);transition:transform .6s var(--ease)}
+.ac:hover::after{transform:scale(1.5)}
+.ac i{position:relative;z-index:1;width:54px;height:54px;border-radius:50%;background:var(--berry);display:grid;place-items:center;margin-bottom:18px}
+.ac i svg{width:24px;height:24px;stroke:var(--pink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ac p{position:relative;z-index:1;margin:0;font:500 19px/1.45 var(--serif);color:var(--ink)}
+
+/* contact */
+.contact{overflow:hidden}
+.contact .big{font:700 clamp(46px,8vw,110px)/1 var(--serif);color:#fff;margin:0 0 20px;letter-spacing:-.02em}
+.contact .big em{font-style:italic;font-weight:500;color:var(--pink)}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cc{background:#ffffff0d;border:1px solid #ffffff1f;border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:4px;transition:transform .5s var(--ease),border-color .4s}
+.cc:hover{transform:translateY(-6px);border-color:#f0c6bd77}
+.cc small{color:var(--pink);font-weight:600;font-size:13px}
+.cc b{font:600 19px var(--serif);color:#fff;overflow-wrap:anywhere}
+.cc .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+footer{background:var(--berry2);color:#cbb3b8;padding:30px max(5vw,18px);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+footer .sig{font:400 34px/1 var(--script);color:var(--pink)}
+footer a{text-decoration:none;color:#f0dadd}footer a:hover{color:#fff}
+
+/* toast, fx */
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,140px);background:var(--berry);color:#fff;font-weight:600;padding:13px 22px;border-radius:99px;box-shadow:0 16px 40px #4a214055;transition:transform .4s var(--ease);z-index:260}
+.toast.on{transform:translate(-50%,0)}
+.fx{position:fixed;left:0;top:0;pointer-events:none;z-index:280}
+.fx .pt{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:80% 0 80% 0;animation:pt .9s cubic-bezier(.2,.7,.3,1) forwards}
+@keyframes pt{to{transform:translate(var(--dx),var(--dy)) rotate(var(--r)) scale(.3);opacity:0}}
+.fx .rg{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:2px solid var(--rg);animation:rg .7s ease-out forwards}
+@keyframes rg{to{transform:scale(5);opacity:0}}
+
+/* intro */
+.intro{position:fixed;inset:0;z-index:400;background:var(--blush);display:grid;place-items:center;transition:clip-path 1.1s cubic-bezier(.75,0,.2,1);clip-path:circle(150% at 50% 50%)}
+.intro.open{clip-path:circle(0% at 50% 50%)}
+.intro .in{text-align:center;transition:opacity .4s,transform .8s var(--ease)}
+.intro.open .in{opacity:0;transform:scale(.9)}
+.intro .mono{width:110px;height:110px;margin:0 auto 18px;border-radius:50%;background:var(--berry);display:grid;place-items:center;font:italic 600 58px var(--serif);color:var(--pink);box-shadow:0 0 0 6px var(--blush),0 0 0 8px var(--rg);animation:mono 1s var(--ease) both}
+@keyframes mono{from{transform:scale(.3) rotate(-90deg);opacity:0}}
+.intro .nm{font:400 clamp(54px,9vw,96px)/1 var(--script);color:var(--berry);clip-path:inset(0 100% 0 0);animation:write 1.6s .5s var(--ease) forwards}
+@keyframes write{to{clip-path:inset(0 0 0 0)}}
+.intro .line{width:0;height:1.5px;margin:12px auto;background:var(--rg);animation:grow 1.2s 1s var(--ease) forwards}
+@keyframes grow{to{width:220px}}
+.intro .sub{font:600 13px var(--sans);letter-spacing:4px;color:var(--rg);text-transform:uppercase;opacity:0;animation:fade .8s 1.4s forwards}
+@keyframes fade{to{opacity:1}}
+.intro .skip{position:absolute;right:22px;bottom:22px;min-height:44px;padding:0 18px;border-radius:99px;border:1px solid var(--rg);background:transparent;color:var(--berry);font:600 13px var(--sans);cursor:pointer}
+.intro .skip:hover{background:var(--berry);color:#fff}
+body.ld{overflow:hidden}
+
+@media(max-width:960px){
+  .hero .wrap,.about,.skills{grid-template-columns:minmax(0,1fr)}
+  .frame{order:-1;width:min(86%,380px);margin-bottom:30px}
+  .ach,.cgrid{grid-template-columns:minmax(0,1fr)}
+  .job{grid-template-columns:60px minmax(0,1fr)}.job .yr{grid-column:2;justify-self:start;grid-row:1;margin-bottom:-12px}
+  .job .ic{width:60px;height:60px;border-radius:18px}.job .ic svg{width:28px;height:28px}
+}
+@media(max-width:600px){
+  nav .wrap{gap:6px}.links{width:100%;margin:0 -12px}
+  .hero{padding-top:140px}
+  .rings{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tools{grid-template-columns:minmax(0,1fr)}
+  
+  .job{grid-template-columns:minmax(0,1fr)}.job .ic{display:none}.job .yr{grid-column:1}
+  .bubble{left:0;font-size:14px}.badge{right:-2%;top:auto;bottom:2%}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}.hero h1 .ch{opacity:1;transform:none}.intro{display:none}#petals{display:none}html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body class="ld">
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="in"><div class="mono">J</div><div class="nm">Jenny Indriana</div><div class="line"></div><div class="sub">Portofolio · S1 Manajemen</div></div>
+  <button class="skip" id="skip">Lewati ›</button>
+</div>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+<div class="prog" id="prog"></div>
+<div class="fx" id="fx"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="rgGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c08a77"/><stop offset="1" stop-color="#4a2140"/></linearGradient>
+    <symbol id="sprig" viewBox="0 0 100 100"><g fill="none" stroke="#c08a77" stroke-width="1.6" stroke-linecap="round">
+      <path d="M92 8 C70 30 52 52 30 92"/>
+      <path d="M78 22c-8-2-14 2-16 9 8 2 14-2 16-9z" fill="#e7bdb3"/><path d="M67 36c8-4 15-1 18 6-8 4-15 1-18-6z" fill="#f0c6bd"/>
+      <path d="M58 48c-9-2-15 3-17 10 9 2 15-3 17-10z" fill="#d9a5a0"/><path d="M49 62c8-4 15-2 18 5-8 4-15 2-18-5z" fill="#e7bdb3"/>
+      <path d="M40 76c-8-2-14 2-16 9 8 2 14-2 16-9z" fill="#f0c6bd"/><circle cx="88" cy="12" r="3" fill="#c08a77"/></g></symbol>
+  </defs>
+</svg>
+
+<nav id="nav"><div class="wrap">
+  <a class="logo" id="logo" href="#top" aria-label="Jenny Indriana — klik untuk ganti warna"><b>J</b><span>Jenny <i>Indriana</i></span></a>
+  <div class="links" id="links"><a href="#tentang">Tentang</a><a href="#pengalaman">Pengalaman</a><a href="#pendidikan">Pendidikan</a><a href="#keahlian">Keahlian</a><a href="#pencapaian">Pencapaian</a><a href="#kontak">Kontak</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="pill rv"><i><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></i>Lulusan S1 Manajemen · STIE Pancasetia</span>
+    <p class="hello" style="margin-top:22px">Halo, saya</p>
+    <h1 id="h1" aria-label="Jenny Indriana"></h1>
+    <div class="typed" id="typed"></div>
+    <p class="sub rv" style="--d:.5s">Disiplin, cepat belajar, dan bersemangat tinggi. Berpengalaman magang di Kejaksaan Negeri Kota Banjarbaru bidang Intelijen, siap berkontribusi untuk kelancaran operasional perusahaan.</p>
+    <div class="cta rv" style="--d:.6s">
+      <a class="btn pri" href="https://wa.me/6281549614508"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 21l2.2-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg><span>Hubungi via WhatsApp</span></a>
+      <a class="btn gh" href="#pengalaman"><span>Lihat pengalaman</span></a>
+    </div>
+    <div class="chips rv" style="--d:.7s"><span><b>3</b> pengalaman kerja</span><span><b>2024</b> magang Kejaksaan</span><span><b>S1</b> Manajemen</span></div>
+  </div>
+
+  <div class="frame" id="frame" role="button" tabindex="0" aria-label="Klik foto untuk menyapa">
+    <svg class="txt" viewBox="0 0 400 400" aria-hidden="true"><defs><path id="circ" d="M200,200 m-182,0 a182,182 0 1,1 364,0 a182,182 0 1,1 -364,0"/></defs>
+      <text><textPath href="#circ">Jenny Indriana ✦ S1 Manajemen ✦ Disiplin ✦ Teliti ✦ Komunikatif ✦</textPath></text></svg>
+    <span class="r1"></span>
+    <div class="ph"><img src="photo.jpg" alt="Foto Jenny Indriana"></div>
+    <svg class="flower" aria-hidden="true"><use href="#sprig"/></svg>
+    <svg class="flower2" aria-hidden="true"><use href="#sprig"/></svg>
+    <div class="bubble" id="bubble">Senang bertemu Anda!</div>
+    <div class="badge"><i><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6"/></svg></i><span>Magang Kejaksaan<small>Bidang Intelijen · 2024</small></span></div>
+    <div class="hint">Klik foto untuk menyapa</div>
+  </div>
+</div></header>
+
+<div class="ribbon" aria-hidden="true"><div class="tr" id="ribbon"></div></div>
+
+<section class="band" id="tentang"><div class="wrap about">
+  <div>
+    <p class="kick rv">Tentang saya</p>
+    <h2 class="rv">Bekerja dengan <em>hati</em>, rapi, dan tepat waktu.</h2>
+    <p class="big rv">Saya lulusan <em>S1 Manajemen STIE Pancasetia</em> yang disiplin, cepat belajar, dan memiliki semangat tinggi dalam bekerja. Saya berpengalaman magang di Kejaksaan Negeri Kota Banjarbaru bidang Intelijen dengan hasil yang memuaskan, pernah bertugas sebagai Staf Panwas Pilkada, dan aktif berorganisasi sejak sekolah.</p>
+    <div class="traits rv" id="traits"></div>
+  </div>
+  <div class="qcard rv" style="--d:.15s">
+    <p>Berkomitmen memberikan hasil terbaik melalui kerja keras, kedisiplinan, dan kolaborasi yang baik.</p>
+    <small>— Jenny Indriana</small>
+    <svg class="fl" aria-hidden="true"><use href="#sprig"/></svg>
+  </div>
+</div></section>
+
+<section class="band dark" id="pengalaman"><div class="wrap">
+  <p class="kick rv">Perjalanan</p>
+  <h2 class="rv">Pengalaman <em style="color:var(--pink)">kerja</em></h2>
+  <p class="lead rv">Pengalaman di bidang intelijen, pengawasan pemilu, dan keuangan organisasi.</p>
+  <div class="xp" id="xp"></div>
+</div></section>
+
+<section class="band" id="pendidikan"><div class="wrap">
+  <p class="kick rv">Pendidikan</p>
+  <h2 class="rv">Riwayat <em>pendidikan</em></h2>
+  <p class="lead rv">Dari pondok pesantren hingga sarjana manajemen.</p>
+  <div class="edu" id="edu"></div>
+</div></section>
+
+<section class="band" id="keahlian" style="background:var(--blush2)"><div class="wrap skills">
+  <div>
+    <p class="kick rv">Keahlian</p>
+    <h2 class="rv">Kemampuan <em>utama</em></h2>
+    <p class="lead rv">Kemampuan yang terus saya kembangkan dalam organisasi dan pekerjaan.</p>
+    <div class="rings" id="rings"></div>
+  </div>
+  <div style="align-self:end">
+    <p class="kick rv">Tools</p>
+    <h2 class="rv" style="font-size:clamp(26px,3vw,34px)">Aplikasi yang saya kuasai</h2>
+    <div class="tools" id="tools"></div>
+  </div>
+</div></section>
+
+<section class="band" id="pencapaian"><div class="wrap">
+  <p class="kick rv">Pencapaian</p>
+  <h2 class="rv">Yang sudah saya <em>raih</em></h2>
+  <p class="lead rv">Hal-hal yang saya banggakan selama belajar dan bekerja.</p>
+  <div class="ach" id="ach"></div>
+</div></section>
+
+<section class="band dark contact" id="kontak"><div class="wrap">
+  <p class="kick rv" style="color:var(--pink)">Kontak</p>
+  <h2 class="big rv">Mari <em>bekerja sama.</em></h2>
+  <p class="lead rv">Terima kasih telah berkunjung. Saya terbuka untuk peluang kerja dan siap memberikan yang terbaik. Silakan hubungi saya kapan saja.</p>
+  <div class="cgrid">
+    <div class="cc rv"><small>Telepon / WhatsApp</small><b>+62 815-4961-4508</b>
+      <div class="row"><a class="btn pri sm" href="https://wa.me/6281549614508" style="background:var(--rg)"><span>Chat WhatsApp</span></a><button class="btn gh sm" data-copy="+6281549614508"><span>Salin</span></button></div></div>
+    <div class="cc rv" style="--d:.08s"><small>E-mail</small><b>jeniruna48@gmail.com</b>
+      <div class="row"><a class="btn gh sm" href="mailto:jeniruna48@gmail.com"><span>Kirim e-mail</span></a><button class="btn gh sm" data-copy="jeniruna48@gmail.com"><span>Salin</span></button></div></div>
+    <div class="cc rv" style="--d:.16s"><small>Instagram · Alamat</small><b>@jennriana__</b><span style="color:#d9c2c6;font-size:14px">Simpang Tiga, Kec. Mataraman</span>
+      <div class="row"><a class="btn gh sm" href="https://www.instagram.com/jennriana__/"><span>Buka Instagram</span></a></div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><span class="sig">Jenny Indriana</span><span>© 2026 · Siap berkontribusi, berkembang, dan memberikan hasil terbaik</span><a href="#top">Kembali ke atas ↑</a></div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+{
+const $=id=>document.getElementById(id);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const toast=$('toast');let tt;
+const msg=m=>{toast.textContent=m;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('on'),1900)};
+
+/* name letters */
+const nm=(w,o,em)=>[...w].map((c,i)=>`<span class="ch" style="--i:${i+o}">${c===' '?'&nbsp;':c}</span>`).join('');
+$('h1').innerHTML=`<span>${nm('Jenny',0)}</span><em>${nm('Indriana',5)}</em>`;
+
+/* ribbon */
+const rb=['Disiplin','Cepat belajar','Komunikatif','Teliti','Bertanggung jawab','Kerja sama tim','Manajemen waktu','Adaptasi cepat'];
+const one=rb.map(t=>`<span>${t}</span>`).join('');$('ribbon').innerHTML=one+one;
+
+/* traits */
+$('traits').innerHTML=['Bertanggung jawab','Teliti','Disiplin','Komunikatif','Bekerja dengan target','Tim & individu'].map(t=>`<span>${t.replace('&','&amp;')}</span>`).join('');
+
+/* experience */
+const ic={court:'<path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6"/>',team:'<circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 5"/>',money:'<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 7h8M8 11h8M8 15h3"/><circle cx="16" cy="16.5" r="2.5"/>'};
+const xp=[
+  ['court','Magang Kejaksaan Negeri Kota Banjarbaru','Bidang Intelijen','2024',['Membantu pengumpulan dan pengolahan data intelijen','Menyusun laporan kegiatan','Mendukung pelaksanaan tugas administrasi']],
+  ['team','Staf Panwas Pilkada','Bawaslu','2024',['Membantu pengawasan tahapan Pilkada','Melakukan monitoring dan dokumentasi kegiatan','Membuat laporan hasil pengawasan']],
+  ['money','Bendahara OSIS','MA Darul Huda','2018 – 2020',['Mengelola pemasukan dan pengeluaran organisasi','Membuat laporan keuangan kegiatan','Bertanggung jawab atas administrasi keuangan']]
+];
+$('xp').innerHTML=xp.map(([k,t,o,y,p],i)=>`<article class="job rv" style="--d:${i*.08}s"><span class="ic"><svg viewBox="0 0 24 24">${ic[k]}</svg></span><div><h3>${t}</h3><div class="org">${o}</div><ul>${p.map(x=>`<li>${x}</li>`).join('')}</ul></div><span class="yr">${y}</span></article>`).join('');
+
+/* education */
+const cap='<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/>',bk='<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V21h16"/>',ms='<path d="M3 21h18M5 21V11l7-6 7 6v10M10 21v-5h4v5"/>';
+const edu=[[cap,'STIE Pancasetia','S1 Manajemen','2021 – 2025'],[bk,'MA Darul Huda','Madrasah Aliyah','2018 – 2021'],[ms,'Pondok Pesantren Darul Hijrah Puteri','Pendidikan pesantren','2015 – 2018']];
+$('edu').innerHTML=edu.map(([s,t,d,y],i)=>`<div class="ed rv" style="--d:${i*.1}s"><span class="dot"><svg viewBox="0 0 24 24">${s}</svg></span><div class="box"><div><h3>${t}</h3><p>${d}</p></div><span class="yr">${y}</span></div></div>`).join('');
+
+/* skills rings */
+const sk=[['Kerja Sama Tim',95],['Manajemen Waktu',90],['Kepemimpinan',88],['Komunikasi',90],['Analisis Masalah',85],['Adaptasi Cepat',90]];
+$('rings').innerHTML=sk.map(([n,v],i)=>`<div class="ring rv" style="--d:${i*.06}s" data-v="${v}"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="42"/><circle class="fg" cx="50" cy="50" r="42"/></svg><div class="v">0%</div><b>${n}</b></div>`).join('');
+const tools=[['X','Microsoft Excel','Data & laporan','#1f7a46'],['W','Microsoft Word','Dokumen & surat','#2b5fb4'],['P','PowerPoint','Presentasi','#c9472a'],['C','Canva','Desain sederhana','linear-gradient(135deg,#2ec4d6,#7d3cf0)']];
+$('tools').innerHTML=tools.map(([l,n,d,c],i)=>`<div class="tool rv" style="--d:${i*.06}s"><i style="background:${c}">${l}</i><div><b>${n}</b><small>${d}</small></div></div>`).join('');
+
+/* achievements */
+const ck='<path d="M5 12l5 5L20 7"/>',st='<path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/>',clk='<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>';
+$('ach').innerHTML=[[st,'Nilai magang di bidang Intelijen dengan hasil memuaskan'],[ck,'Terlibat aktif dalam kegiatan organisasi sekolah'],[clk,'Mampu bekerja dengan target dan tenggat waktu']].map(([s,t],i)=>`<div class="ac rv" style="--d:${i*.08}s"><i><svg viewBox="0 0 24 24">${s}</svg></i><p>${t}</p></div>`).join('');
+
+/* count-up */
+const count=(el,to,suf='')=>{if(reduce){el.textContent=to+suf;return}const t0=performance.now(),dur=1600;const s=t=>{const k=Math.max(0,Math.min(1,(t-t0)/dur)),e=1-Math.pow(1-k,3);el.textContent=Math.round(to*e)+suf;if(k<1)requestAnimationFrame(s)};requestAnimationFrame(s)};
+
+/* reveal */
+const activate=t=>{t.classList.add('in');if(t.classList.contains('ring')){const v=+t.dataset.v;t.querySelector('.fg').style.strokeDashoffset=264*(1-v/100);count(t.querySelector('.v'),v,'%')}};
+const seen=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){activate(e.target);seen.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+const startReveal=()=>document.querySelectorAll('.rv').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight*.95)activate(el);else seen.observe(el)});
+
+/* typed */
+const roles=['Lulusan S1 Manajemen','Administrasi & Pelaporan','Pengolahan Data','Keuangan Organisasi','Siap Bekerja Sama'];
+const ty=$('typed');let startTyped=()=>{};
+if(reduce){ty.textContent=roles[0]}else{let r=0,c=0,del=false;const tick=()=>{const w=roles[r];c+=del?-1:1;ty.innerHTML='<b>'+w.slice(0,c)+'</b>';let d=del?40:80;if(!del&&c===w.length){del=true;d=1700}else if(del&&c===0){del=false;r=(r+1)%roles.length;d=300}setTimeout(tick,d)};startTyped=()=>setTimeout(tick,800)}
+
+/* photo click: greeting + petals */
+const greets=['Senang bertemu Anda!','Terima kasih sudah berkunjung','Siap bekerja sama','Disiplin & cepat belajar','Semoga harimu menyenangkan'];
+let gi=0;const bubble=$('bubble'),frame=$('frame');
+const greet=e=>{gi=(gi+1)%greets.length;bubble.classList.add('chg');setTimeout(()=>{bubble.textContent=greets[gi];bubble.classList.remove('chg')},250);
+  const r=frame.getBoundingClientRect();for(let k=0;k<3;k++)setTimeout(()=>burst(r.left+r.width/2+(Math.random()-.5)*r.width*.6,r.top+r.height/2+(Math.random()-.5)*r.height*.6,14),k*90)};
+frame.addEventListener('click',greet);
+frame.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();greet()}});
+
+/* petal burst on click */
+const fx=$('fx');let ready=false;
+const cols=()=>{const cs=getComputedStyle(document.documentElement);return[cs.getPropertyValue('--rg').trim(),cs.getPropertyValue('--pink').trim(),cs.getPropertyValue('--rose').trim(),cs.getPropertyValue('--berry').trim()]};
+const burst=(x,y,n=10)=>{if(reduce)return;const c=cols();const r=document.createElement('span');r.className='rg';r.style.left=x+'px';r.style.top=y+'px';fx.append(r);setTimeout(()=>r.remove(),750);
+  for(let i=0;i<n;i++){const p=document.createElement('span');p.className='pt';const a=Math.random()*Math.PI*2,d=35+Math.random()*55;
+    p.style.cssText=`left:${x}px;top:${y}px;background:${c[i%4]};--dx:${Math.cos(a)*d}px;--dy:${Math.sin(a)*d+20}px;--r:${Math.random()*540}deg`;fx.append(p);setTimeout(()=>p.remove(),950)}};
+document.addEventListener('pointerdown',e=>{if(ready&&e.button===0&&!e.target.closest('#frame'))burst(e.clientX,e.clientY)});
+
+/* falling petals canvas */
+const cv=$('petals'),cx=cv.getContext('2d');let W=0,H=0,petals=[];
+const size=()=>{const dpr=Math.min(2,devicePixelRatio||1);W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)};
+size();addEventListener('resize',size);
+const mk=()=>({x:Math.random()*W,y:-20-Math.random()*H,s:6+Math.random()*9,vy:.35+Math.random()*.7,vx:-.3+Math.random()*.6,a:Math.random()*6.28,va:-.02+Math.random()*.04,sw:Math.random()*6.28,o:.35+Math.random()*.4});
+const N=innerWidth<600?10:18;for(let i=0;i<N;i++){const p=mk();p.y=Math.random()*H;petals.push(p)}
+let pcol=['#e7bdb3','#f0c6bd','#d9a5a0'];
+const draw=()=>{cx.clearRect(0,0,W,H);for(const p of petals){p.y+=p.vy;p.sw+=.02;p.x+=p.vx+Math.sin(p.sw)*.4;p.a+=p.va;if(p.y>H+20){Object.assign(p,mk());p.y=-20}
+  cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.globalAlpha=p.o;cx.fillStyle=pcol[Math.floor(p.s)%3];cx.beginPath();cx.moveTo(0,-p.s);cx.quadraticCurveTo(p.s*.9,0,0,p.s);cx.quadraticCurveTo(-p.s*.9,0,0,-p.s);cx.fill();cx.restore()}
+  requestAnimationFrame(draw)};
+if(!reduce)draw();
+
+/* scroll */
+const nav=$('nav'),prog=$('prog');const links=[...document.querySelectorAll('#links a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));const eduEl=$('edu');
+const onScroll=()=>{const h=document.documentElement,y=h.scrollTop||document.body.scrollTop;
+  prog.style.transform=`scaleX(${y/Math.max(1,h.scrollHeight-h.clientHeight)})`;nav.classList.toggle('solid',y>30);
+  let a=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.35)a=i});links.forEach((l,i)=>l.classList.toggle('on',i===a));
+  const r=eduEl.getBoundingClientRect();eduEl.style.setProperty('--p',Math.min(1,Math.max(0,(innerHeight*.75-r.top)/r.height)))};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* theme switch */
+const pals=[['Berry rose gold','#4a2140','#331630','#c08a77','#f0c6bd','#d9a5a0',['#e7bdb3','#f0c6bd','#d9a5a0']],
+  ['Lavender','#3f2b63','#2c1d47','#9b7fc4','#d9c9f2','#bba6e0',['#d9c9f2','#e8dcf8','#bba6e0']],
+  ['Peach coral','#7a2e3a','#5a1f2a','#e0846b','#ffd0bf','#f0a896',['#ffd0bf','#ffc2ad','#f0a896']],
+  ['Navy gold','#1e2a4a','#141c33','#c9a24a','#f1dfae','#dcc07a',['#f1dfae','#e9d39a','#dcc07a']]];
+let pi=0;
+$('logo').addEventListener('click',e=>{e.preventDefault();pi=(pi+1)%pals.length;const [n,b,b2,rg,pk,ro,pc]=pals[pi];const st=document.documentElement.style;
+  st.setProperty('--berry',b);st.setProperty('--berry2',b2);st.setProperty('--rg',rg);st.setProperty('--pink',pk);st.setProperty('--rose',ro);pcol=pc;
+  document.querySelectorAll('#rgGrad stop').forEach((s,i)=>s.setAttribute('stop-color',i?b:rg));msg('Tema warna: '+n);scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+
+/* copy */
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.dataset.copy);msg('Tersalin: '+b.dataset.copy)}catch(e){msg('Gagal menyalin, silakan salin manual')}}));
+
+/* intro */
+const intro=$('intro');let done=false;
+const finish=()=>{if(done)return;done=true;intro.classList.add('open');document.body.classList.remove('ld');document.body.classList.add('ready');ready=true;startReveal();startTyped();setTimeout(()=>intro.remove(),1200)};
+$('skip').addEventListener('click',e=>{e.stopPropagation();finish()});
+if(reduce)finish();else{setTimeout(finish,3000);}
+}
+</script>
+</body>
+</html>
